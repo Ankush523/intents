@@ -62,7 +62,7 @@ const Home: NextPage = () => {
         },
         body: JSON.stringify({ body: `${command}` }),
       };
-      const response = await fetch('http://localhost:3000/completion', options);
+      const response = await fetch('http://localhost:8000/completion', options);
       const data = await response.json();
       console.log("Transaction hash is :",data);
       setTxHash(data);
