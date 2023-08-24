@@ -136,7 +136,7 @@ export default function Login({
 
   return loading ? (
     <Box display="flex">
-      <Spinner size="xl" color="blue.500" />
+      <Spinner size="xl" color="purple.500" />
     </Box>
   ) : null;
 }

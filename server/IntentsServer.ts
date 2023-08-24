@@ -119,7 +119,7 @@ const sendTransaction = async (protocol:any,func : any, tokensArray: any, values
 }
 
 const configuration = new Configuration({
-  apiKey: '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',
+  apiKey: process.env.OPENAI_API_KEY,
 });
 
 const openai = new OpenAIApi(configuration);
